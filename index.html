@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+
+  <link rel="stylesheet" href="css/desktop.css">
+  <script>
+    var controller = new ScrollMagic.Controller({vertical: true});
+    $(function () { // wait for document ready
+      // build tween
+      var tween = new TimelineMax ()
+        .add(
+          TweenMax.to(".layer1", 1, {backgroundPosition: "100% 200%", ease: Linear.easeNone}));
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: ".layer1", duration: 700, triggerHook: 0})
+              .setTween(tween)
+              .setPin(".layer1")
+              .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+      var tween2 = new TimelineMax ()
+        .add(
+          TweenMax.to(".layer2", 1, {backgroundPosition: "-100% 200%", ease: Linear.easeNone}));
+
+      // build scene
+      var scene2 = new ScrollMagic.Scene({triggerElement: ".layer2", duration: 700, triggerHook: 0})
+              .setTween(tween2)
+              .setPin(".layer2")
+              .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+      var tween3 = new TimelineMax ()
+        .add(
+          TweenMax.to(".layer3", 1, {backgroundPosition: "100% 200%", ease: Linear.easeNone}));
+
+      // build scene
+      var scene3 = new ScrollMagic.Scene({triggerElement: ".layer3", duration: 700, triggerHook: 0})
+              .setTween(tween3)
+              .setPin(".layer3")
+              .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+      var tween4 = new TimelineMax ()
+        .add(
+          TweenMax.to(".layer4", 1, {backgroundPosition: "-100% 200%", ease: Linear.easeNone}));
+
+      // build scene
+      var scene4 = new ScrollMagic.Scene({triggerElement: ".layer4", duration: 700, triggerHook: 0})
+              .setTween(tween4)
+              .setPin(".layer4")
+              .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+    });
+  </script>
+
+  <title>Japan Impression</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="stripe"></div>
+    <!-- <div class="icon"></div> -->
+    <div class="row section" id="s1">
+      
+      <div class="four invisible columns">
+        <div class="layer1"></div>
+      </div>
+      
+      <div class="four invisible columns"></div>
+      <div class="four columns">
+        <p id="p1">"Too lazy to be ambitious, I let the world take care of itself. Ten days' worth of rice in my bag; a bundle of twigs in my fireplace. Why chatter about delusion and enlightenment? Listening to the night rain on my roof, I sit comfortably, with both legs stretched out." — Ryokan Taigu<br><br>
+        The "Land of the Rising Sun" is a country where the past meets the future. Japanese culture stretches back millennia, yet has also been quick to adopt and created the latest modern fashions and trends.</p>
+      </div>
+    </div>
+    <div class="row section" id="s2">
+
+      <div class="four invisible columns">
+        <div class="layer2"></div>
+      </div>
+      <div class="four invisible columns"></div>
+      <div class="four invisible columns">
+        <p id="p2">"Too lazy to be ambitious, I let the world take care of itself. Ten days' worth of rice in my bag; a bundle of twigs in my fireplace. Why chatter about delusion and enlightenment? Listening to the night rain on my roof, I sit comfortably, with both legs stretched out." — Ryokan Taigu<br><br>
+        The "Land of the Rising Sun" is a country where the past meets the future. Japanese culture stretches back millennia, yet has also been quick to adopt and created the latest modern fashions and trends.</p>
+      </div>
+    </div>
+    <div class="row section" id="s3">
+      <div class="four invisible columns">
+        <div class="layer3"></div>
+      </div>
+      <div class="four invisible columns"></div>
+      <div class="four invisible columns">
+        <p id="p1">"Too lazy to be ambitious, I let the world take care of itself. Ten days' worth of rice in my bag; a bundle of twigs in my fireplace. Why chatter about delusion and enlightenment? Listening to the night rain on my roof, I sit comfortably, with both legs stretched out." — Ryokan Taigu<br><br>
+        The "Land of the Rising Sun" is a country where the past meets the future. Japanese culture stretches back millennia, yet has also been quick to adopt and created the latest modern fashions and trends.</p>
+      </div>
+    </div>
+    <div class="row section" id="s4">
+      <div class="four invisible columns">
+        <div class="layer4"></div>
+      </div>
+      <div class="four invisible columns"></div>
+      <div class="four invisible columns">
+        <p id="p2">"Too lazy to be ambitious, I let the world take care of itself. Ten days' worth of rice in my bag; a bundle of twigs in my fireplace. Why chatter about delusion and enlightenment? Listening to the night rain on my roof, I sit comfortably, with both legs stretched out." — Ryokan Taigu<br><br>
+        The "Land of the Rising Sun" is a country where the past meets the future. Japanese culture stretches back millennia, yet has also been quick to adopt and created the latest modern fashions and trends.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
