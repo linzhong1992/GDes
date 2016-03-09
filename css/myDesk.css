@@ -1,0 +1,46 @@
+/*body {
+	width: 1024px;
+}*/
+.section {
+	width: 1024px;
+	height: 700px;
+	z-index: -1;
+	position: relative;
+}
+.section:first-child {
+	background: url(../images/japan1.jpg) no-repeat center;
+	-webkit-background-size: cover;
+}
+
+.section:nth-child(2) {
+	background: url(../images/japan2.jpg) no-repeat center;
+	-webkit-background-size: cover;
+}
+.section:nth-child(3) {
+	background: url(../images/japan3.jpg) no-repeat center;
+	-webkit-background-size: cover;
+}
+
+.section:last-child {
+	background: url(../images/japan4.jpg) no-repeat center;
+	-webkit-background-size: cover;
+}
+
+.stripe {
+	width: 1024px;
+	height: 2800px;
+	background: url(../images/stripe.png);
+	-webkit-background-size: cover;
+	margin-bottom: -2800px;
+	z-index: 1;
+}
+
+.icon {
+	width: 160px;
+	height: 140px;
+	background: url(../images/icon.png);
+	-webkit-background-size: cover;
+	z-index: 1;
+	position: fixed;
+	margin-top: 180px;
+}
