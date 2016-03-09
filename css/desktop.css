@@ -87,7 +87,14 @@ p {
 }
 
 #p2 {
-  margin-top: 400px;
+  margin-top: 350px;
+}
+
+.h {
+  font-family: Georgia;
+  font-size: 2em;
+  line-height: 1.4em;
+  color: rgb(230, 230, 230);
 }
 
 /* ----------------- Start Grid for desktop screens ----------------- */
